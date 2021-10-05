@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		109B3ED4270C121D00657DD7 /* City_Sights_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B3ED3270C121C00657DD7 /* City_Sights_AppApp.swift */; };
-		109B3ED6270C121D00657DD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B3ED5270C121D00657DD7 /* ContentView.swift */; };
+		109B3ED4270C121D00657DD7 /* CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B3ED3270C121C00657DD7 /* CitySightsApp.swift */; };
+		109B3ED6270C121D00657DD7 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B3ED5270C121D00657DD7 /* LaunchView.swift */; };
 		109B3ED8270C121E00657DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109B3ED7270C121E00657DD7 /* Assets.xcassets */; };
 		109B3EDB270C121E00657DD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 109B3EDA270C121E00657DD7 /* Preview Assets.xcassets */; };
+		109B3EE5270C145100657DD7 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B3EE4270C145100657DD7 /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		109B3ED0270C121C00657DD7 /* City Sights App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Sights App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		109B3ED3270C121C00657DD7 /* City_Sights_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City_Sights_AppApp.swift; sourceTree = "<group>"; };
-		109B3ED5270C121D00657DD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		109B3ED3270C121C00657DD7 /* CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightsApp.swift; sourceTree = "<group>"; };
+		109B3ED5270C121D00657DD7 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		109B3ED7270C121E00657DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		109B3EDA270C121E00657DD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		109B3EE4270C145100657DD7 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +53,10 @@
 		109B3ED2270C121C00657DD7 /* City Sights App */ = {
 			isa = PBXGroup;
 			children = (
-				109B3ED3270C121C00657DD7 /* City_Sights_AppApp.swift */,
+				109B3ED3270C121C00657DD7 /* CitySightsApp.swift */,
 				109B3EE3270C12AC00657DD7 /* Views */,
 				109B3EE2270C129E00657DD7 /* ViewModels */,
 				109B3EE1270C129000657DD7 /* Models */,
-				109B3ED5270C121D00657DD7 /* ContentView.swift */,
 				109B3ED7270C121E00657DD7 /* Assets.xcassets */,
 				109B3ED9270C121E00657DD7 /* Preview Content */,
 			);
@@ -80,6 +81,7 @@
 		109B3EE2270C129E00657DD7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				109B3EE4270C145100657DD7 /* ContentModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -87,6 +89,7 @@
 		109B3EE3270C12AC00657DD7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				109B3ED5270C121D00657DD7 /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,8 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				109B3ED6270C121D00657DD7 /* ContentView.swift in Sources */,
-				109B3ED4270C121D00657DD7 /* City_Sights_AppApp.swift in Sources */,
+				109B3ED6270C121D00657DD7 /* LaunchView.swift in Sources */,
+				109B3ED4270C121D00657DD7 /* CitySightsApp.swift in Sources */,
+				109B3EE5270C145100657DD7 /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +299,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"City Sights App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant permission to find restaurants and sights near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +329,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"City Sights App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant permission to find restaurants and sights near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
